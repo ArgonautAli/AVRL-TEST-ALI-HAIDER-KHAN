@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALI HAIDER KHAN AVRL</title>
+ 
+    <script>
+        function startAnimation() {
+            document.getElementById("circle1").classList.add("circle1anim")
+            document.getElementById("circle2").classList.add("circle2anim")
+            document.getElementById("circle3").classList.add("circle3anim")
+            document.getElementById("circle4").classList.add("circle4anim")
+        }
+
+        function stopAnimation() {
+            document.getElementById("circle1").classList.remove("circle1anim")
+            document.getElementById("circle2").classList.remove("circle2anim")
+            document.getElementById("circle3").classList.remove("circle3anim")
+            document.getElementById("circle4").classList.remove("circle4anim")
+        }
+    </script>
+
+    <style>
+        * {
+            max-width: 800px;
+        }
+        
+        .container1 {
+            display: flex;
+            position: relative;
+            left: 650px;
+            top: 200px;
+        }
+        
+        .circle {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            position: fixed;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+        }
+        
+        .circle1 {
+            background-color: red;
+            z-index: 4;
+        }
+        
+        .circle1anim {
+            animation-name: circle1anim;
+        }
+        
+        @keyframes circle1anim {
+            0% {
+                width: 50px;
+            }
+        
+            12.5% {
+                width: 200px;
+                border-radius: 999px;
+                background-color: yellow;
+            }
+        
+            25% {
+                width: 50px;
+                border-radius: 999px;
+                background-color: yellow;
+            }
+        
+            37.5% {
+                width: 200px;
+                border-radius: 999px;
+                background-color: blue;
+            }
+        
+            50% {
+                width: 50px;
+                border-radius: 999px;
+                background-color: blue;
+            }
+        
+            62.5% {
+                width: 200px;
+                border-radius: 999px;
+                background-color: green;
+            }
+        
+            75% {
+                width: 50px;
+                border-radius: 999px;
+                background-color: green;
+            }
+        
+            87.5% {
+                width: 200px;
+                border-radius: 999px;
+                background-color: red;
+            }
+        
+            100% {
+                width: 50px;
+                background-color: red;
+            }
+        }
+        
+        .circle2 {
+            background-color: yellow;
+            z-index: 3;
+            margin-left: 150px;
+        }
+        
+        .circle2anim {
+            animation-name: circle2anim;
+        }
+        
+        
+        @keyframes circle2anim {
+            0% {
+                height: 50px;
+            }
+        
+            12.5% {
+                height: 200px;
+                border-radius: 999px;
+                background-color: blue;
+            }
+        
+            25% {
+                height: 50px;
+                border-radius: 999px;
+                background-color: blue;
+            }
+        
+            37.5% {
+                height: 200px;
+                border-radius: 999px;
+                background-color: green;
+            }
+        
+            50% {
+                height: 50px;
+                border-radius: 999px;
+                background-color: green;
+            }
+        
+            62.5% {
+                height: 200px;
+                border-radius: 999px;
+                background-color: red;
+            }
+        
+            75% {
+                height: 50px;
+                border-radius: 999px;
+                background-color: red;
+            }
+        
+            87.5% {
+                height: 200px;
+                border-radius: 999px;
+                background-color: yellow;
+            }
+        
+            100% {
+                height: 50px;
+                background-color: yellow;
+            }
+        }
+        
+        .container2 {
+            display: flex;
+            position: relative;
+            left: 650px;
+            top: 350px;
+        }
+        
+        .circle3 {
+            background-color: green;
+            bottom: -50px;
+            z-index: 1;
+            position: absolute;
+        }
+        
+        .circle3anim {
+            animation-name: circle3anim;
+        }
+        
+        
+        @keyframes circle3anim {
+            0% {
+                height: 50px;
+            }
+        
+            12.5% {
+                height: 200px;
+                border-radius: 999px;
+                background-color: red;
+            }
+        
+            25% {
+                height: 50px;
+                border-radius: 999px;
+                background-color: red;
+            }
+        
+            37.5% {
+                height: 200px;
+                border-radius: 999px;
+                background-color: yellow;
+            }
+        
+            50% {
+                height: 50px;
+                border-radius: 999px;
+                background-color: yellow;
+            }
+        
+            62.5% {
+                height: 200px;
+                border-radius: 999px;
+                background-color: blue;
+            }
+        
+            75% {
+                height: 50px;
+                border-radius: 999px;
+                background-color: blue;
+            }
+        
+            87.5% {
+                height: 200px;
+                border-radius: 999px;
+                background-color: green;
+            }
+        
+            100% {
+                height: 50px;
+                background-color: green;
+            }
+        }
+        
+        .circle4 {
+            background-color: blue;
+            right: 584px;
+            z-index: 2;
+            margin-left: 150px;
+            position: absolute;
+        }
+        
+        .circle4anim {
+            animation-name: circle4anim;
+        }
+        
+        
+        @keyframes circle4anim {
+            0% {
+                width: 50px;
+            }
+        
+            12.5% {
+                width: 200px;
+                border-radius: 999px;
+                background-color: green;
+            }
+        
+            25% {
+                width: 50px;
+                border-radius: 999px;
+                background-color: green;
+            }
+        
+            37.5% {
+                width: 200px;
+                border-radius: 999px;
+                background-color: red;
+            }
+        
+            50% {
+                width: 50px;
+                border-radius: 999px;
+                background-color: red;
+            }
+        
+            62.5% {
+                width: 200px;
+                border-radius: 999px;
+                background-color: yellow;
+            }
+        
+            75% {
+                width: 50px;
+                border-radius: 999px;
+                background-color: yellow;
+            }
+        
+            87.5% {
+                width: 200px;
+                border-radius: 999px;
+                background-color: blue;
+            }
+        
+            100% {
+                width: 50px;
+                background-color: blue;
+            }
+        }
+        
+        .button {
+            position: relative;
+            display: flex;
+            left: 670px;
+            top: 450px;
+            
+        }
+        
+        .start_btn {
+            margin-right: 50px;
+            cursor: pointer;
+            background-color: aqua;
+        }
+        
+        .stop_btn {
+            
+            cursor: pointer;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <div class="circle circle1" id="circle1"></div>
+        <div class="circle circle2" id="circle2"></div>
+    </div>
+
+    <div class="container2">
+        <div class="circle circle3" id="circle3"></div>
+        <div class="circle circle4" id="circle4"></div>
+    </div>
+
+    <div class="button">
+        <button class="start_btn" onclick=startAnimation()>START</button>
+        <button class="stop_btn" onclick=stopAnimation()>STOP</button>
+    </div>
+
+    <script src="app.js"></script>
+
+   
+</body>
+
+</html>
